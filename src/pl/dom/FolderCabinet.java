@@ -7,10 +7,10 @@ import java.util.Optional;
 
 public class FolderCabinet {
 
-	private static boolean isfolderFound = false;
-	private static Optional<Folder> folderSearched = Optional.empty(); 
-	private static List<Folder> foldersBySizeList = new ArrayList<Folder>();
-	private static int sizeOfList = 0;
+	private boolean isfolderFound = false;
+	private Optional<Folder> folderSearched = Optional.empty(); 
+	private List<Folder> foldersBySizeList = new ArrayList<Folder>();
+	private int sizeOfList = 0;
 	
 	public Optional<Folder> findFolderByName(List<Folder> folders, String name) {
 		if(isDataEmpty(name) || isCollectionNull(folders))

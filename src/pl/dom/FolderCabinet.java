@@ -17,7 +17,7 @@ public class FolderCabinet {
 			return Optional.empty();
 
 //		mechanizm ze stream -> iteruje całą kolekcję, 
-//		lepiej z pętlą 'for' i flagą 'folderFound' która kończy iterację pętli po znalezieniu szukanego elementu
+//		lepiej z pętlą 'for' i flagą 'isFolderFound' która kończy iterację pętli po znalezieniu szukanego elementu
 		for(int i = 0; i < folders.size() && !isfolderFound; i++) {
 			searchFolderByName(folders.get(i), name);
 		}
